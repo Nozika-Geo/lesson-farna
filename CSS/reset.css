@@ -1,0 +1,20 @@
+/* html, body,nav,ul,li,a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    text-decoration: none;
+    font-style: none;
+
+}
+
+ul,li{
+    list-style: none;
+    white-space: nowrap
+}
+a{
+   text-decoration: none;
+}
+*
+{
+    box-sizing: border-box;
+} */
