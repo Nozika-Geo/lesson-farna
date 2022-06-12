@@ -13,7 +13,7 @@ padding: auto;
 }
 :root {
   --background: #f6f3e0;
-  --main-header-text-color: #3e515a;
+  --main-text-color: #3e515a;
   --redcolor: #a80532;
   --whitecolor: #ffffff;
   --yellowcolor: #dcc26a;
@@ -52,7 +52,7 @@ padding: auto;
   font-size: 20px;
   text-align: center;
   display: inline-block;
-  color: var(--main-header-text-color);
+  color: var(--main-text-color);
   text-decoration: none;
 }
 .menu-list a::before {
@@ -157,15 +157,14 @@ padding: auto;
   transition: 0.7s;
 }
 
-/* 
+/* /* 
                                                                                   LANGUAGES DONE
                                                                                  Main Menu Body DONE */
-*/
+/* */ */
 
 /* 
                                                                              RESOURCES PAGE
                                                                             Resources Banner  */
-
 
 .resources-banner{
   text-align: center;
@@ -178,15 +177,47 @@ width: 53px;
 height: 53px;
 }
 .resources-banner h3 {
-  color: var(--main-header-text-color);
+  color: var(--main-text-color);
   font-size: 49px;
   margin-bottom: 21px;
+  text-align: center;
 }
 .dividing_line {
  font-size: 35px;
  color: var(--redcolor);
  margin: 0px 0px 100px 0px;
+ text-align: center;
 }
 
-/*                                                                          Resources banner done */
 
+/*                                                                                         Resources banner done */
+
+
+/*                                                                                          RESOURCES CONTENT */
+.resources-content{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.item {
+  width: 375px;
+  background-color:var(--whitecolor);
+  padding: 41px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--main-text-color);
+  align-items: center;
+}
+.item p {
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  font-weight:bold;
+
+}
