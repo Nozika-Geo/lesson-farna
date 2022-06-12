@@ -4,31 +4,40 @@
 }
 body {
   font-family: mtavruli;
+margin: auto;
+padding: auto;
 }
 :root {
   --background: #f6f3e0;
-  --maincolor: #3e515a;
+  --main-header-text-color: #3e515a;
   --redcolor: #a80532;
   --whitecolor: #ffffff;
   --yellowcolor: #dcc26a;
 }
 .menu {
   display: flex;
-  padding: 21px 60px;
+  padding: 21px 60px 0px 60px;
   background-color: var(--background);
   justify-content: space-between;
   align-items: center;
+    margin: 0 auto;
   box-sizing: border-box;
 }
 
 .menu-list {
   display: flex;
   align-items: center;
-    list-style: none;
-    white-space: nowrap
+  list-style: none;
+  white-space: nowrap;
+  margin:  0;
+  padding-inline-start: 0;
 }
 
+
 .menu-list a:hover {
+  color: var(--redcolor);
+}
+.menu-list a:active {
   color: var(--redcolor);
 }
 .menu-list li {
@@ -39,7 +48,7 @@ body {
   font-size: 20px;
   text-align: center;
   display: inline-block;
-  color: var(--maincolor);
+  color: var(--main-header-text-color);
   text-decoration: none;
 }
 .menu-list a::before {
@@ -50,9 +59,6 @@ body {
   margin-left: 0px;
 }
 
-.active {
-  color: var(--redcolor);
-}
 .main::before {
   content: url("../img/Icon-home.svg");
 }
@@ -96,9 +102,8 @@ body {
   content: url("../img/Icon-settings-red.svg");
 }
 
-.languages{
+.languages {
   display: flex;
-  
 }
 .languages li {
   display: inline-block;
@@ -110,33 +115,64 @@ body {
   margin-left: 14px;
 }
 
-
 .languages li a {
   display: flex;
-  align-items:  center;
+  align-items: center;
   justify-content: center;
   width: 100%;
   height: 100%;
   padding: 0%;
   font-size: 18px;
   color: var(--yellowcolor);
+  text-decoration: none;
 }
-.languages li:last-child {
+.languages li {
   margin-left: 14px;
   background-color: var(--whitecolor);
   border-color: var(--yellowcolor);
-  border-width: 1px;
+  border-width: 2px;
   border-style: solid;
+}
+.languages li:active {
+  background-color: var(--redcolor);
+  color: var(--yellowcolor);
+  border-width: 2px;
+  border-color: var(--yellowcolor);
 }
 
 .languages li:hover {
   background-color: var(--redcolor);
   color: var(--yellowcolor);
+  border-width: 2px;
+  border-color: var(--yellowcolor);
+  transition: 0.7s;
 }
-.languages li:first-child:hover {
+
+/* .languages li:first-child:hover {
   background-color: var(--whitecolor);
   border-color: var(--yellowcolor);
   border-width: 1px;
   border-style: solid;
   color: var(--redcolor);
+} */
+.resources-banner{
+  text-align: center;
 }
+.resources-banner img
+{
+display: block;
+margin: 120px auto 21px;
+width: 53px;
+height: 53px;
+}
+.resources-banner h3 {
+  color: var(--main-header-text-color);
+  font-size: 49px;
+  margin-bottom: 21px;
+}
+.dividing_line {
+ font-size: 35px;
+ color: var(--redcolor);
+ margin: 0px 0px 100px 0px;
+}
+
