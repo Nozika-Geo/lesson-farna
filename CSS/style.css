@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
   font-family: mtavruli;
   src: url("../Font/bpg_extrasquare_mtavruli_2009.ttf");
 }
@@ -136,4 +136,4 @@ body {
   border-width: 1px;
   border-style: solid;
   color: var(--redcolor);
-} */
+}
