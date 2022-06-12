@@ -24,7 +24,10 @@ body {
 .menu-list {
   display: flex;
   align-items: center;
+    list-style: none;
+    white-space: nowrap
 }
+
 .menu-list a:hover {
   color: var(--redcolor);
 }
