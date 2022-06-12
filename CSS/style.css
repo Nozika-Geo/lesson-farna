@@ -1,3 +1,7 @@
+
+/*                                                                          Main Menu Body */
+
+
 @font-face {
   font-family: mtavruli;
   src: url("../Font/bpg_extrasquare_mtavruli_2009.ttf");
@@ -102,6 +106,11 @@ padding: auto;
   content: url("../img/Icon-settings-red.svg");
 }
 
+
+/* 
+                                                                                  LANGUAGES 
+*/
+
 .languages {
   display: flex;
 }
@@ -148,13 +157,16 @@ padding: auto;
   transition: 0.7s;
 }
 
-/* .languages li:first-child:hover {
-  background-color: var(--whitecolor);
-  border-color: var(--yellowcolor);
-  border-width: 1px;
-  border-style: solid;
-  color: var(--redcolor);
-} */
+/* 
+                                                                                  LANGUAGES DONE
+                                                                                 Main Menu Body DONE */
+*/
+
+/* 
+                                                                             RESOURCES PAGE
+                                                                            Resources Banner  */
+
+
 .resources-banner{
   text-align: center;
 }
@@ -175,4 +187,6 @@ height: 53px;
  color: var(--redcolor);
  margin: 0px 0px 100px 0px;
 }
+
+/*                                                                          Resources banner done */
 
